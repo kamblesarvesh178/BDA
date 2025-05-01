@@ -45,7 +45,7 @@ text = '''I like Hadoop.
 
 def mapper(text):
     result = []
-    words = text.split(.)
+    words = text.split()
     for word in words:
         word = word.strip('.,!?').lower()
         result.append((word,1))
